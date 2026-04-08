@@ -1,0 +1,195 @@
+/* Generales */
+.jlac-body {
+  background-color: #F4F0E4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;       /* asegura que el body ocupe toda la altura */
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.tab-content {
+  flex: 1; /* el contenido ocupa el espacio disponible */
+}
+
+.jlac-header {
+  background-color: transparent; /* sin color de fondo */
+  text-align: center;
+}
+
+.jlac-logo {
+  height: 80px; /* tamaño del logo */
+}
+
+/* Menú */
+.jlac-tabs .nav-link {
+  color: #4b2e2e;
+  font-weight: bold;
+}
+
+.jlac-tabs .nav-link.active {
+  background-color: #e0d3c2;
+  color: #000;
+}
+
+/* Footer fijo abajo */
+.jlac-footer {
+  background-color: #e0d3c2;
+  text-align: center;
+  padding: 10px;
+ 
+}
+
+/* Inicio */
+.jlac-video {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.jlac-inicio-text {
+  position: relative;
+  text-align: center;
+  padding-top: 250px; /* más abajo */
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.jlac-inicio-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Cafecitos */
+.text-brown { color: #6b4226; }
+
+.jlac-card {
+  width: 240px;
+  text-align: center;
+  border: 2px solid #6b0f1a;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.jlac-img {
+  width: 220px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.jlac-card-body h3 {
+  color: #4b2e2e;
+  margin: 10px 0;
+}
+
+.jlac-card-body ul {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.jlac-desc {
+  font-style: italic;
+  color: #666;
+  border-top: 1px dashed #ccc;
+  padding-top: 8px;
+  font-size: 13px;
+}
+
+/* Por qué elegirnos */
+.jlac-section {
+  max-width: 1100px;
+  margin: 40px auto;
+  line-height: 1.6;
+  color: #241a14;
+}
+
+.jlac-flex {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap; /* para que se adapte en móvil */
+}
+
+.jlac-img-col {
+  flex: 1;
+  text-align: center;
+}
+
+.jlac-img-porque {
+  max-height: 400px;
+  max-width: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.jlac-text-col {
+  flex: 2;
+  line-height: 1.6;
+  color: #241a14;
+  padding: 20px 0;
+}
+
+.jlac-text-col h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+/* Contacto */
+.jlac-form {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #e0d3c2;
+  border-radius: 8px;
+}
+
+.jlac-form label {
+  font-weight: bold;
+  color: #4b2e2e;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.jlac-form input,
+.jlac-form select,
+.jlac-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.jlac-form button {
+  background-color: #996515;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.jlac-form button:hover {
+  background-color: #7a4a12;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .jlac-logo { height: 60px; }
+  .jlac-inicio-text { padding-top: 180px; }
+  .jlac-form { width: 90%; }
+  .jlac-flex { flex-direction: column; }
+}
